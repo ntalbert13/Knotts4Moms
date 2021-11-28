@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 15px;
+}
+div#outer {
+    display: inline-grid;
+    grid-template-columns: repeat (100px);
+    grid-template-rows: 50px 100px 150px;
+}
+outline {
+    outline-width: medium;
+    outline-color: black;
+    outline-style: groove
+}
+
+body>header { 
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+html
+{
+    background-color:lightcyan;
+}
+section
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section > h1 
+{
+grid-area: 1/1/2/3;
+font-family: cursive
+}
+header{background-color:blanchedalmond;
+}
+h1 {
+border:0;
+font-family:monospace;
+color:white;
+text-align: center;
+font-size:2.2em;
+letter-spacing: 0.1em;
+}
+nav > ul 
+{
+text-emphasis-color: antiquewhite; 
+display: inline;
+padding-left: 5px;
+list-style-type: none;
+text-align: center;
+width:75%;
+font-size: 25px;
+font-family:serif;
+font-weight: normal;
+letter-spacing: 2px;
+border-style: groove;
+}
+body >* {
+    outline: 2px dashed black;
+}
+section >* { 
+    outline: 2px dashed black;
+}
+footer 
+{
+color: black;
+font-size: 20px;
+display:inline;
+text-align: center;
+}
