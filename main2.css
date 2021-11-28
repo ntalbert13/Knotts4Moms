@@ -5,12 +5,12 @@ body {
 }
 div#outer {
     display: inline-grid;
-    grid-template-columns: repeat 100px;
+    grid-template-columns: repeat(auto,100px,1fr);
     grid-template-rows: 50px 100px 150px;
 }
 outline {
     outline-width: medium;
-    outline-color: black;
+    outline-color: antiquewhite;
     outline-style: groove
 }
 
@@ -21,7 +21,7 @@ body>header {
 
 html
 {
-    background-color:lightcyan;
+    background-color: lightskyblue;
 }
 section
 {
@@ -33,7 +33,7 @@ section > h1
 grid-area: 1/1/2/3;
 font-family: cursive
 }
-header{background-color:blanchedalmond;
+header{background-color:white;
 }
 h1 {
 border:0;
@@ -45,7 +45,7 @@ letter-spacing: 0.1em;
 }
 nav > ul 
 {
-text-emphasis-color: antiquewhite; 
+color:antiquewhite; 
 display: inline;
 padding-left: 5px;
 list-style-type: none;
@@ -58,14 +58,14 @@ letter-spacing: 2px;
 border-style: groove;
 }
 body >* {
-    outline: 2px dashed black;
+    outline: 2px dashed blue;
 }
 section >* { 
-    outline: 2px dashed black;
+    outline: 2px dashed white;
 }
 footer 
 {
-color: black;
+color: antiquewhite;
 display:inline;
 text-align: center;
 }
