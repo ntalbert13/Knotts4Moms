@@ -1,6 +1,6 @@
 body {
-    grid-template-areas: header header
-                         nav nav    
+    grid-template-areas:header header
+                        nav nav    
                         body body;
                         
     display: grid;
