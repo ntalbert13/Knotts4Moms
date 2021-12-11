@@ -1,10 +1,10 @@
 body {
-    grid-template-areas:header header
-                        nav nav    
-                        body body;
-                        
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-areas:"header header"
+                        "intro faq"
+                        "article faq"
+                        "footer footer";
     grid-column-gap: 15px;
 }
 div#outer {
@@ -22,6 +22,10 @@ body>header {
     grid-row: 1;
     grid-column: 1/-1;
 }
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > section { grid-area: article;}
+body > footer {grid-area: footer;}
 
 html
 {
@@ -39,6 +43,16 @@ font-family: cursive
 }
 header{background-color:blanchedalmond;
 }
+intro {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+}
+faq{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+}
 h1 {
 border:0;
 font-family:monospace;
@@ -51,19 +65,18 @@ nav > ul
 {
 text-emphasis-color: antiquewhite; 
 display: inline;
-padding-left: 5px;
-list-style-type: none;
-text-align: center;
+padding-left: 50px;
+list-style-type:none;
+text-align: left;
 width:75%;
-font-size: 25px;
+font-size: 15px;
 font-family:serif;
 font-weight: normal;
-letter-spacing: 2px;
-border-style: dashed;
+letter-spacing: 8px;
+border-style: none;
 }
-
 body >* {
-    outline: 2px dashed black;
+    border-style: ridge;
 }
 input[type=text] {
   width: 100%;
