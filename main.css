@@ -64,10 +64,10 @@ letter-spacing: 0.1em;
 nav > ul 
 {
 text-emphasis-color: antiquewhite; 
-display: inline;
+display:contents;
 padding-left: 50px;
 list-style-type:none;
-text-align: left;
+text-align: center;
 width:75%;
 font-size: 15px;
 font-family:serif;
@@ -81,7 +81,7 @@ body >* {
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 2px;
   box-sizing:content-box;
   border: none;
   background-color: blanchedalmond;
@@ -141,3 +141,38 @@ font-size: 20px;
 display:inline;
 text-align: center;
 }
+ 
+.slider{
+  width: 700px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.slider .photos {
+  position: relative;
+  height: 433px;
+}
+        
+.slider .photos img.shown {
+  opacity: 1;
+}
+            
+.prev:before,
+.next:before {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
+
+.prev:before {
+  content: '<';
+  left: 0;
+}
+
+.next:before {
+  content: '>';
+  right: 0;
+}
+    
